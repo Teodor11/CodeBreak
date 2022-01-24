@@ -1,0 +1,30 @@
+.Status {
+    box-sizing: border-box;
+    display: block;
+    padding: 0.3em;
+    position: relative;
+    left: -4em;
+    white-space: nowrap;
+    width: calc(100% + 8em);
+}
+
+.StatusGameInProgress {
+    background: yellow;
+}
+
+.StatusGameWon {
+    background-color: #79ff4b;
+}
+
+.StatusGameLost {
+    background-color: #ff8065;
+}
+
+
+@media screen and (max-width: 600px) {
+    .Status {
+        position: static;
+        width: 100vw;
+    }
+    
+}

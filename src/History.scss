@@ -1,0 +1,78 @@
+.History
+{
+    background-color: #282c34;
+    display: inline-block;
+
+    table {
+        border-spacing: 0.96em;
+        margin: 0 auto;
+    }
+
+    td 
+    {
+
+        &.historyAttemptId
+        {
+            color: #C4D8FF;
+            font-weight: bold;
+        }
+
+        span
+        {
+            border-radius: 0.8em;
+            display: inline-block;
+            height: 2.2em;
+            vertical-align: middle;
+            width: 2.2em;
+
+            &.noColor
+            {
+                background-color: #626C80;
+            }
+        }
+
+        &.td_indicators 
+        {
+            align-content: flex-start;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-right: 1em;
+            max-height: 2.2em;
+            width: 2em;
+
+            .indicator {
+                background-color: #626C80;
+                border-radius: 0.5em;
+                margin: 0.05em;
+                height: 1em;
+                width: 1em;
+            }
+
+            .indicator_white {
+                background-color: white;
+            }
+
+            .indicator_green {
+                background-color: lime;
+            }
+        }
+
+        
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .History {
+        max-height: calc(100vh - 310px - env(safe-area-inset-top, 80px) - env(safe-area-inset-bottom, 80px));
+        overflow-y: scroll;
+        touch-action: pan-y;
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #ddd;
+        }
+    }
+    
+}
+

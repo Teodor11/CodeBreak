@@ -1,0 +1,138 @@
+.DropArea
+{
+    margin-bottom: 1em;
+}
+ 
+.DropTarget
+{    
+    display: inline-block;
+    height: 4em;
+    width: 4em;
+
+    .DropTargetColorDisplay 
+    {
+        border: 3px solid #282c34;
+        border-radius: 0.8em;
+        box-sizing: border-box;
+        height: 2.5em;
+        margin: 0.75em;
+        pointer-events: none;
+        transition: all 0.05s;
+        width: 2.5em;
+
+        &.noColor {
+            background-color: white;
+            border: none;
+        }
+    }
+}
+
+.DropTarget > .DropTargetHover {
+    transform: scale(1.4);
+}
+
+
+.DropItem
+{
+    border: 3px solid #282c34;
+    border-radius: 1em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0.4em;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.DropItemPreview {
+    border-radius: 1.5em;
+    font-size: 1.25em;
+    height: 3.75em;
+    width: 3.75em;
+    z-index: 700;
+}
+
+.dropItems
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em auto;
+    max-height: 10em;
+
+    &.dropItems4Columns {
+        max-width: 15em;
+    }
+}
+
+
+.dropTargets
+{
+    background-color: #AAE3EC; //#C4E8FF??
+    border: 3px solid transparent;
+    border-radius: 1em;
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.3em;
+    width: 30em;
+    max-width: 95vw;
+
+    p {
+        margin: 0.5em;
+    }
+
+    .dropTargetsGroup
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .clearAttempt button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 1.25em;
+        position: relative;
+        left: 1em;
+        transition: all 0.2s;
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    span {
+        display: block;
+    }
+}
+
+
+
+.addAttempt, .restartGame, .showHelp
+{
+    display: inline-block;
+    margin: 0 0.6em; 
+
+    *:focus-visible {
+        outline: none;
+    }
+
+    button
+    {
+        font-size: 1.3em;
+        padding: 0.1em 0;
+        transition: all 0.1s;
+    }
+}
+
+.addAttempt button {
+    width: 9em;
+}
+
+.restartGame button, .showHelp button {
+    width: 2.7em;
+}

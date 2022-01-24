@@ -1,0 +1,73 @@
+$code_colors: yellow, tomato, greenyellow, mediumpurple,
+ rgb(44, 148, 252), chocolate, pink, darkgrey;
+
+.Board
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Board.dragInProgress {
+
+    .HistoryContainer {
+        filter: brightness(50%);
+    }
+
+    .dropTargets {
+        border: 3px dashed black;
+    }
+
+}
+
+
+.HistoryContainer {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 0.5em;
+    margin-top: 0.5em;
+    transition: filter 0.2s;
+}
+
+
+
+ 
+.codeColor1 {
+    background-color: nth($code_colors, 1);
+}
+
+.codeColor2 {
+    background-color: nth($code_colors, 2);
+}
+
+.codeColor3 {
+    background-color: nth($code_colors, 3);
+}
+
+.codeColor4 {   
+    background-color: nth($code_colors, 4);
+}
+
+.codeColor5 {
+    background-color: nth($code_colors, 5);
+}
+
+.codeColor6 {
+    background-color: nth($code_colors, 6);
+}
+
+.codeColor7 {
+    background-color: nth($code_colors, 7);
+}
+
+.codeColor8 {
+    background-color: nth($code_colors, 8);
+}
+
+@media screen and (max-width: 600px) {
+    .HistoryContainer {
+        margin: 0;
+        row-gap: 0;
+    }
+    
+}

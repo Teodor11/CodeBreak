@@ -1,0 +1,48 @@
+body {
+    background-color: #77C8FF;
+    margin: 0 0 1.4em 0;
+    font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+button {
+    background-color: #85D3FF;
+    border: 3px solid black;
+    color: black;
+    cursor: pointer;
+    font-family: unset;
+    padding: 0.5em;
+
+    &:hover:not(:disabled) {
+        background-color: rgba(127, 255, 50, 0.6);
+    }
+
+    &:disabled {
+        background-color: #C4D8FF;
+        cursor: default;
+    }
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    body {
+        height: 100vh;
+    }
+
+}
+
+@media screen and (max-height: 600px) and (orientation: landscape) 
+{
+    //body {
+        //transform: rotate(90deg);
+    //}
+}

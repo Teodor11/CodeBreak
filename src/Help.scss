@@ -1,0 +1,68 @@
+.Help
+{
+    background-color: #6BFFEB;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px #56D4E8;
+    box-sizing: border-box;
+    position: absolute;
+    left: 30%;
+    top: 5em;
+    margin: 2em auto;
+    width: 40%;
+    z-index: 800;
+
+    .helpImageContainer 
+    {
+        align-items: center;
+        display: flex;
+        margin: 1em auto;
+        width: 80%;
+    }
+
+    img 
+    {
+        object-fit: contain;
+
+        &.helpAddAttemptImage {
+            width: 10em;
+        }
+
+        &.helpIndicatorsImage {
+            margin-right: 0.8em;
+            width: 2.5em;
+        }
+    }
+}   
+
+
+@media screen and (max-width: 600px) {
+
+    .Help {
+        left: 2%;
+        top: 3em;
+        width: 96%;
+    }
+
+}
+
+
+
+.closeHelpButton 
+{
+    background: none;
+    border: unset;
+    font-size: 1.5em;
+    height: 2em;
+    padding: unset;
+    position: absolute;
+    right: 0.75em;
+    top: 0.75em;
+    width: 2em;
+
+    &:hover {
+        background: none !important;
+        color: red;
+    }
+
+    > * { pointer-events: none;}
+}
