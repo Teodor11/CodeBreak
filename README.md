@@ -1,6 +1,6 @@
 # CodeBreak
 
-CodeBreak is a game where your goal is to break color code. You can customize number of attempts, code length and number of colors.
+CodeBreak is a game similiar to MasterMind, where your goal is to break color code. You can customize number of attempts, code length, number of colors and possibility of repeating colors.
 
 Visit https://code-break.web.app/, set game options and start playing.
 
