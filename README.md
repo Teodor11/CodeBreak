@@ -12,4 +12,4 @@ Visit https://code-break.web.app/, set game options and start playing.
 - Your goal is to break the code in the smallest number of attempts.
 
 **The game is mobile-friendly 😉 📱💻🖥**
-![Game in progress](/build/help/game_won_mobile.png)
+![Game_won_mobile](https://user-images.githubusercontent.com/24278460/150980852-d7f28ab4-3565-4952-85b1-738a9df783ba.png)
